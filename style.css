@@ -1,0 +1,274 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #0b1120; /* deep navy blue */
+    color: #e0e6f1; /* light text */
+}
+
+::selection {
+    color: white;
+    background: #3b82f6;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    border-radius: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 1;
+}
+
+.boxx {
+    height: 100vh;
+}
+
+.head {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    letter-spacing: 40px;
+    color: #90b4ff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+.box {
+    height: 90vh;
+    display: flex;
+    padding-top: 2vh;
+}
+
+.box1 {
+    height: 100%;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #e0e6f1;
+}
+
+.box11 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+.miku {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.t1 {
+    min-width: 80%;
+    max-width: 80%;
+    min-height: 92%;
+    max-height: 92%;
+    
+    font-size: 3vh;
+    padding: 10px;
+    border: 3px solid #3b82f6;
+    background-color: #1e293b;
+    color: #e0e6f1;
+}
+
+.t2 {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.t22 {
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 30%;
+    max-height: 30%;
+    border: 3px solid #3b82f6;
+    background-color: #1e293b;
+    color: white;
+    padding: 10px;
+}
+
+.miko2 {
+    height: 50%;
+    width: 95%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.t2 button {
+    font-size: 2vh;
+    border: none;
+    height: 40%;
+    width: 60%;
+    background-color: #3b82f6;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(59, 130, 246, 0.3);
+}
+
+.t2 button:hover {
+    background-color: #2563eb;
+}
+
+.t3 {
+    min-width: 70%;
+    max-width: 70%;
+    min-height: 80%;
+    max-height: 80%;
+
+    font-size: 3vh;
+    border: 3px solid #3b82f6;
+    background-color: #1e293b;
+    color: #e0e6f1;
+    padding: 10px;
+}
+
+.box12 {
+    height: 45%;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 4vh;
+    margin-top: 3%;
+}
+
+.t4 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 45%;
+    margin-left:3% ;
+}
+
+.t4 h3 {
+    font-size: 4vh;
+    font-weight: 400;
+    color: #60a5fa;
+}
+
+.t4 h5 {
+    font-size: 20vh;
+    margin-top: -3vh;
+    color: #3b82f6;
+}
+
+.box2 {
+    height: 100%;
+    width: 50%;
+}
+
+.box21 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.box211,
+.box212 {
+    width: 45%;
+    height: 100%;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    padding: 10px;
+    color: #e0e6f1;
+}
+
+.box22 {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.p,
+.n,
+.ne {
+    height: 70%;
+    width: 25%;
+    margin-top: 5%;
+    overflow-y: scroll;
+    display: flex;
+    justify-self: start;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2vh;
+    font-size: 3vh;
+    word-break: break-word;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #1f2937;
+    color: rgba(255, 0, 0, 0.217);
+    
+}
+
+.p {
+    border: 3px solid #36de29;
+    background-color: #66b52e21;
+    color: #e0e6f1;
+}
+
+.n {
+    border: 3px solid #d72323;
+    background-color: #c523233d;
+    color: #e0e6f1;
+}
+
+.ne {
+    border: 3px solid #3b82f6;
+    background-color: #bb212153;
+    color: #e0e6f1;
+}
+
+.box22 h3 {
+    font-weight: 300;
+    color: #e0e6f1;
+    margin-bottom: -5%;
+}
+
+
+/* Fade-in animation for analysis results */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Smooth pulse for boxes after update */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+    }
+    50% {
+        box-shadow: 0 0 15px rgba(59, 130, 246, 0.7);
+    }
+    100% {
+        box-shadow: 0 0 0 rgba(59, 130, 246, 0);
+    }
+}
+
+.animate-pulse {
+    animation: pulseGlow 1s ease-out;
+}

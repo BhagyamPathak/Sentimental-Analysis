@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Sentimental analysis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main2">
+        <div class="boxx">
+            <div class="head">Sentiment Analysis</div>
+            <div class="box">
+                <div class="box1">
+                    <div class="box11">
+                        <div class="miku">
+                        <textarea placeholder="Text here ... " class="t1" name="" id="analysis"></textarea></div>
+                        <div class="t2">
+                            <textarea placeholder="Paste link" class="t22" name="" id="link"></textarea>
+                            <div class="miko2">
+                                <button onclick="link()">Link</button>
+                                <button onclick="handleSubmit()">Analysis</button>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="box12">
+                        
+                        
+                        <textarea placeholder="Summary will show here" class="t3" name=""  id="summary"></textarea>
+                        <div class="t4">
+                            <h3>Mood:</h3>
+                            <h5 id="mood">🧐</h5>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="box2">
+                    <div class="box21">
+                        <div class="box211">
+                            <canvas id="myChart1" width="400" height="500"></canvas>
+                        </div>
+                        <div class="box212">
+                            <canvas id="myDonutChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="box22">
+
+                        <div class="p">
+                            <h3>positive</h6>
+                            <p class="positive"></p>
+                        </div>
+                       
+                        <div class="ne">
+                            <h3>Neutral</h6>
+                            <p class="neutral"></p>
+                        </div>
+
+                        <div class="n">
+                            <h3>Negative</h6>
+                                <p class="negative"></p>
+                            </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
